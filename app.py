@@ -58,7 +58,7 @@ def gen_dict(df, title):
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = config.Config.SECRET_KEY
-app.config['UPLOAD_FOLDER'] = 'static/uploads'
+app.config['UPLOAD_FOLDER'] = config.Config.UPLOAD_FOLDER
 
 
 @app.route('/')
